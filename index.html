@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mr. and Mrs. Ahmed</title>
+
+    <!-- Google Scrapbook Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🎵 BACKGROUND MUSIC PLAYER -->
+<audio id="bgMusic" preload="auto"></audio>
+
+<!-- 🎀 MUSIC PLAYLIST PANEL -->
+<div class="music-panel" id="musicPanel">
+
+    <div class="music-header">
+        🎶 Our Playlist
+        <span class="close-btn" onclick="toggleMusic()">✕</span>
+    </div>
+
+    <div class="music-progress">
+        <span id="current-time">0:00</span>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <div id="progress-knob"></div>
+        </div>
+
+        <span id="total-time">0:00</span>
+    </div>
+
+    <button id="playPauseBtn">⏸</button>
+
+    <ul class="music-list">
+        <li onclick="playSong('audio/AboutYou.mp3', this)">About You – The 1975</li>
+        <li onclick="playSong('audio/GoldenHour.mp3', this)">Golden Hour – JVKE</li>
+        <li onclick="playSong('audio/ily3000.mp3', this)">I Love You 3000 – Stephanie Poetri</li>
+        <li onclick="playSong('audio/ONLY.mp3', this)">ONLY – LeeHi</li>
+        <li onclick="playSong('audio/Promise.mp3', this)">Promise – Laufey</li>
+        <li onclick="playSong('audio/THLH.mp3', this)">Tera Hone Laga Hoon – Atif Aslam</li>
+        <li onclick="playSong('audio/LYBMHA.mp3', this)">Let You Break My Heart Again – Laufey</li>
+        <li onclick="playSong('audio/Regardless.mp3', this)">Regardless – Asim Azhar</li>
+        <li onclick="playSong('audio/her.mp3', this)">her – JVKE</li>
+        <li onclick="playSong('audio/YGMSH.mp3', this)">You Got Me So High – The Neighbourhood</li>
+    </ul>
+</div>
+
+<!-- 🎶 SMALL BUTTON TO OPEN PANEL -->
+<div class="music-toggle" onclick="toggleMusic()">🎵</div>
+
+<!-- Doodles -->
+<div class="doodle-container">
+    <img src="images/hellokitty.png" class="doodle d1">
+    <img src="images/star.png" class="doodle d2">
+    <img src="images/squiggle.png" class="doodle d3">
+    <img src="images/diamond.png" class="doodle d4">
+</div>
+
+<!-- Scrapbook Navigation Arrows -->
+<div class="nav-arrow left-arrow" onclick="turnPage('prev')">&#8592;</div>
+<div class="nav-arrow right-arrow" onclick="turnPage('next')">&#8594;</div>
+
+<!-- Floating Effects -->
+<div id="effects-layer"></div>
+
+<!-- Landing Screen -->
+<div id="landing-screen">
+    <div class="landing-content">
+        <h1>For My Favourite Girl</h1>
+        <p>i made you a little something :)</p>
+        <button id="enterBtn">Click Here For A Surprise ✨</button>
+    </div>
+</div>
+
+<!-- BOOK CONTAINER -->
+<div id="book">
+
+    <!-- PAGE 1 -->
+    <div class="page active">
+        <div class="page-content">
+            <h1>The Honeymoon Phase 💐</h1>
+
+            <p class="note">
+                6 follow requests… ayesha israr. doesn’t that ring a bell? it’s been over 4 years of me knowing this beautiful girl that’s reading this right now, and i thank God every day for making you mine Ayesha. it has been one hell of a ride, but let’s take a little trip down memory lane to our first year together. where do i even begin? i’m sitting in online class studying (scrolling ig) like a good boy, and then i see a message request from last night. “are you ma’am ana’s son?”HELLO? AP HEIN KON? KAHAN LIGAYA FONE? and that’s where it all began. there was something about you that had me hooked right from the start. a pretty girl texting me back within minutes no matter the time, getting pissed at me talking to girls at work. wait, DOES SHE WANT ME CHAT? i was dumb. i couldn’t pick up on the hints at all, and before i knew it, we were sending each other lovey dovey posts and staying up all night without a care in the world. the farewell was first time i got to see the girl who had already become part of my routine, and she looked absolutely stunning.i was falling harder for you every day without even realising it, and then came the morning where you had enough. you finally confessed.<br>
+                4 years ago today.<br>
+                the memories i have of that first year are unforgettable. it was perfect. our first breakup (i’m still sorry), those nerve-wracking CAIEs, that first eye contact, that first summer we spent talking for like 8 hours every single day, that ig3 EM class, that first hug, that first kiss. those moments where we’d pull our chairs closer just to get a sniff of each other’s scent, those first few calls in december, and then the turn of the new year. our first ramadan together, our first eid together, and now the first new year celebrations together. it was so magical, so special. it was something we were both experiencing for the first time, and it was absolutely beautiful. that first hug we shared under the stairs, and that first kiss behind those big doors (your lips tasted like strawberries, ill never forget that). all of it just felt so… right. i couldnt wait to build so many more memories with you. my beautiful little girl :)
+            </p>
+        </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div class="page-content">
+            <h1>Deeper In Love 💗</h1>
+
+            <p class="note">
+                we grew closer and closer with each passing day, and this year really made us fall in love so much harder. i still remember meeting you after our EM exam, and boy did i have the time of life. the memories, the pictures, the laughter, it was the perfect first hangout. you looked so beautiful that day, i wouldve kissed you if hamna wasnt there but wtv CANT DO NUN ABOUT IT NOW.. what a day. i still think about it from time to time. AND THEN AS UFFF seeing my baby everyday in her pretty pretty abayas, catching a glimpse of her gorgeous eyes and her big warm smile, i used to sink my head inside shees ki bund yearning TO THE POINT KE WO DOOR DHIKKAY DETA THA MUJHE i yearned for you i wanted you i couldnt get enough of you ayesha, and to this day i still cant get enough of you. picking the same teachers js so we can spend as much time together as possible, young dumb and broke. the most famous couple of the sns era, and for a good reason too. you have this ethereal looking,intelligent, goal-oriented and hardworking girl and then this dumbo who somehow bagged her. the perfect dynamic (destructive) duo. it was a lovely year from what i remember, picking a few little arguments along the way with a buttload of unforgettable memories made as we fell harder for eachother. i mean how could i forget buying that roll paratha for you and then seeing you running away in the middle of chemistry with everyone watching as i chased you into the maths class and slipped it inside your bag. how could i forget sitting opposite to you on the floor after the university fair accompanied by shees and amna, and how both of us were lost in eachothers eyes. how could i forget sitting next to you in physics and taking in your scent, putting my black bag right next to your purple bag. i love you so much ayesha, and i remember so much from that year that i could stay up all night reminiscing about the memories.
+            </p>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page">
+        <div class="page-content">
+            <h1>Through the Dark Storm 💔</h1>
+
+            <p class="note">
+                and then comes the fall off. texts get dry, conversations get fiesty, arguments grow into something much more aggressive, and then december 2024. this one wasn’t easy. i don’t even know where to start, but this was the hardest phase we’ve ever been through. everything just felt like it was going wrong one after the other. arguments and misunderstandings creating bridges and distance. it felt like we were constantly fighting, constantly trying to fix something that just kept breaking over and over again. there were so many moments where it felt like we were actually gonna go our separate ways. it felt like the end of the road. it hurt. alot. it hurt seeing us like that, it hurt not feeling as close to you, it hurt knowing we were both struggling but not always knowing how to fix it. i made mistakes, we both said things we probably didn’t mean, we both had moments where we didn’t handle things the way we should have. but through all those sleepless nights i never stopped caring about you ayesha. there was never a moment where i didn’t want you in my life, even when we were at rock bottom. you meant the world to me, and i couldnt give up on you, or give up on us. it was a chaotic year to say the least. all the heartbreak you had to endure, im tearing up right now as i type this out because i wish i had done things differently so that your whole perspective of love wasnt ruined in the blink of an eye. i owe you everything, and im sorry. what amazes me, ayesha, is that we didn’t let go. obviously there were moments when it felt like our whole world just crashed, but we didn’t give up. you didn’t give up. it would’ve been so easy to walk away, but you chose to stay. and i’ll never take that for granted. you didn’t deserve any of it, and as i end this chapter with eyes full of tears and a heart filled with guilt, i just wanna tell you that i love you. i have always loved you for who you are, and you are the most attractive girl i’ve ever seen, princess. that year was something we never expected, and yet, we survived. you are the strongest woman i have ever seen ayesha, and now i js wanna conquer the whole world and put it right at your feet.
+            </p>
+        </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page">
+        <div class="page-content">
+            <h1>Falling In Love Again ❤️‍🩹</h1>
+
+            <p class="note">
+                and here we are today, rebuilding the spark we lost. after everything we went through, we're still here. in spanish, you call it "La Remontada". the comeback. we rebuilt everything from the ground up, slow gradual steps with regular setbacks, but it felt different. it felt as if we were healing from the wounds and the bad memories. it wasnt about everything being easy anymore, but rather about understanding each other better and learning how to love each other the right way. you've been the most patient girl ever throughout this whole year, the strength and resillience you possess is unmatched meri shehzaadi. i’ve fallen for you all over again. i want you when you're happy, i want you when you're sad, i want you when you're pissed, i want you when you're moody. you belong to me and that includes every single one of your 500 moods and attitudes. mine. all mine. it’s not just about loving you when things are perfect, it’s about choosing you even when they aren’t. ap ki baatein, ap ki muskuraahat, ap ki hansi, ap ki aankhein, ap ka chehra, ap ka dil, sab mera hai. i wanna cherish you forever, because this year has taught me what road i need to take to get to your heart. youre not js someone i love, youre someone ive grown with, someone ive learned from, someone whos seen me at my best aswell as my worst, and still chose to stay. i’ll never take you for granted, ever. i miss you more than i can put into words, being so far away from you made me realise js how much you mean to me. i cant wait to be with you again, and finally be able to nikkah you next year after so long. you’re everything i could’ve ever asked for and i don’t ever want to be in a position where i make you feel otherwise again. i wanna be better for you. for us. i wanna give you the kind of love you deserve, the kind that feels safe, consistent, and real. i see a whole life with you, and In Sha Allah soon ill officially announce you as mine to the whole world. you’re my person, ayesha, and im the happiest version of myself when im with you. my peace, my happiness, my everything. happy anniversary baby, to the woman i love the most, and the woman id sacrifice everything for. i love you, mrs ahmed.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
